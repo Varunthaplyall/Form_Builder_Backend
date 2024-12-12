@@ -8,7 +8,7 @@ const responseRoutes = require("./routes/responseRoutes");
 
 const app = express();
 const options = {
-  origin: "*",
+  origin: process.env.NODE_ENV,
 };
 
 app.use(express.json());
