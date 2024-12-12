@@ -6,12 +6,9 @@ const cors = require("cors");
 const formRoutes = require("./routes/formRoutes");
 const responseRoutes = require("./routes/responseRoutes");
 
-const frontendUrl =
-  process.env.FRONTEND_URL ||
-  "https://form-builder-frontend-n3b3ylae0-varunthaplyalls-projects.vercel.app";
 const app = express();
 const options = {
-  origin: frontendUrl,
+  origin: "*",
 };
 
 app.use(express.json());
