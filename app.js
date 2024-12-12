@@ -8,7 +8,7 @@ const responseRoutes = require("./routes/responseRoutes");
 
 const app = express();
 const options = {
-  origin: "http://localhost:5173",
+  origin: "*",
 };
 
 app.use(express.json());
